@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "2U 이유식",
+    "slug": "my-working-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFBF3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "com.amazon.mobile.shopping",
+          "amazon",
+          "kyobobook"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFBF3"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "supabaseUrl": "https://ojgxncvubiwxxnqmvibx.supabase.co",
+      "supabaseAnonKey": "sb_publishable_KfunTXkJvWPo_Ovnpywmsw_mC_thnX4"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "알레르기 반응 사진을 첨부하기 위해 사진 라이브러리 접근이 필요합니다.",
+          "cameraPermission": "알레르기 반응 사진을 촬영하기 위해 카메라 접근이 필요합니다."
+        }
+      ]
+    ]
+  }
+}
